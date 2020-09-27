@@ -1,0 +1,247 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html ,body {
+    background: none;
+    height: 100%;
+    width: 100%;
+}
+
+p{
+    color: #ffffff;
+    font-family: "Martel";
+}
+
+.configuracion{
+    background-color: #F5852A;
+    padding: 15px 0;
+}
+
+.conf{
+    font-size: 35px;
+}
+
+
+h1{
+    font-size: 40px;
+    font-family: "Titillium Web";
+}
+
+h2{
+    font-family: "Mitr";
+    text-align: center;
+}
+
+h3{
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: white;
+    font-family: "Mitr";
+}
+
+canvas {
+    background-color: black;
+    width: 75%;
+    height: 62%;
+    margin-left: 135px;
+}
+
+.particula{
+    background-color: #004E5C;
+}
+
+.formulario{
+    width: 100%;
+    height: 85%;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    background-color: #cccccc;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.center2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.center3{
+    width: 100%;
+    display: block;
+    margin-top: 10px; 
+    margin: auto;
+}
+
+.center4{
+    margin-left: 135px; 
+    display: grid;
+    margin-top: 5px; 
+    grid-template-columns: 23.4% 16% 47.8%;
+}
+
+.center5{
+    margin-left: 82.7%;   
+    margin-top: 8px; 
+}
+
+.gridP{
+    margin-top: 25px;
+    width: 92%;
+    display: grid;
+    grid-template-columns: 55% 50%;
+}
+
+.gridC{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 110px 80px;
+}
+
+.tittle{
+    width: 100%;
+    height: 13%;
+    background-color: #bfbfbf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paint{
+    background-color: #f2f2f2;
+    height: 2%;
+    width: 100%;
+}
+
+.size{
+    width: 60%;
+}
+.size2{
+    width: 85%;
+    height: 22px;
+}
+
+.boton1{
+    position: absolute;
+    background: #067365;
+    color: white;
+    width: 300px;
+    height: 50px;
+    border: 1px ;
+    font-size: 20px;
+    overflow: hidden;
+    transition: .6s;
+    margin-top: 90px;
+}
+.boton1:focus{
+    outline: none;
+}
+
+.boton1:before{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgb(255, 255, 255,.5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5s;
+    filter: blur(30px);
+    transform: rotateX(-130px) skewX(-15deg);
+}
+.boton1::after{
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgb(255, 255, 255,.2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
+    transform: translate(-100px) scaleX(-15deg);
+}
+.boton1:hover{
+    background: #3e413e;
+    cursor: pointer;
+}
+.boton1:hover:before{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: .6;
+    transition: .7s;
+}
+.boton1:hover::after{
+    transform: translateX(300px) skewX(-15deg);
+    opacity: 1;
+    transition: .7s;
+}
+
+.space{
+    margin-top: 30px;
+}
+
+.space2{
+    height: 21px;
+    width: 100%;
+}
+
+.hola{
+    color: black;
+    margin-right: 15px;
+}
+
+.hola4{
+    color: black;
+    margin-right: 10px;
+}
+
+.hola2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.size3{
+    font-size: 15px;
+}
+
+.size4{
+    height: 22px;
+}
+
+.size5{
+    height: 21px;
+    width: 100%;
+}
+
+.trayectoria{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.space3{
+    margin-right: 5px;
+}
+
+.hola3{
+    display: flex;
+    margin-left: auto;
+}
+
+.hola5{
+    margin-top: 30px;
+}
+
+.size6{
+    width: 100%;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Martel:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="tittle">
+        <h1>Simulación</h1>
+    </div>
+    <div class="paint">
+
+    </div>
+    <div class="formulario">
+        <div class="particula">
+            <div class="configuracion">
+                <h2 class="conf">Configuración</h2>
+            </div>
+            <div class="gridP">
+                <div class="center2"> 
+                    <h3>Particulas</h3>
+                    <div class="gridC">
+                        <div>
+                            <p class="size4">Velocidad</p>
+                            <p>inicial:</p>
+                        </div>
+                        <div>
+                            <p class="size4">Notación</p>
+                            <p>científica</p>
+                        </div>
+                        <input class="size2" type="number" id="magnitudP" >
+                        <div class="hola2">
+                            <p class="size3">x10^</p>
+                            <input class="size" type="number" id="elevado" max="8">
+                        </div>
+                    </div>
+                    <div class="space">
+                        <p>Dirección en grados:</p>
+                        <input class="size6" type="number" id="direccionP" min="0" max="180">
+                    </div>
+                    <div class="space">
+                        <p>Elije una particula: </p>
+                        <select class="size5" id="particula">
+                            <option value="">Ninguno</option>
+                            <option value="1">Electrón</option>
+                            <option value="2">Positrón</option>
+                            <option value="3">Protón</option>
+                            <option value="4">Neutrón</option>
+                            <option value="5">Partícula alfa</option>
+                            <option value="6">Núcleo de deuterio</option>
+                            <option value="7">Muón</option>
+                            <option value="8">Tau</option>
+                            <option value="9">Antimuón</option>
+                            <option value="10">Mesón</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                <div class="center2">
+                    <h3>Campo eléctrico</h3>   
+                    <div class="gridC">
+                        <p>Magnitud:</p>
+                        <div>
+                            <p class="size4">Notación</p>
+                            <p>científica</p>
+                        </div>
+                        <input class="size2" type="number" id="magnitudE">
+                        <div class="hola2">
+                            <p class="size3">x10^</p>
+                            <input class="size" type="number" id="elevado2">
+                        </div>
+                    </div>
+                    <div class="space">
+                        <p>Sentido:</p>
+                        <select class="space2" id="direccionE">
+                            <option value="1">Arriba</option>
+                            <option value="2">Abajo</option>
+                        </select>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="center">
+                <button class="boton1" id="boton" onclick="createParticle()">Simular</button>
+            </div>
+        </div>
+        <div class="center3">
+            <div class="hola5">
+                <canvas id="canvas"></canvas>
+                <div class=" center4">
+                    <p class="hola">Tamaño de la particula:</p>
+                    <select id="Tamaño">
+                        <option value="1">Grande</option>
+                        <option value="2">Mediana</option>
+                        <option value="3" selected>Pequeña</option>
+                    </select>
+                    <div class="hola3">
+                        <p class="hola4">Trayectoria:</p>
+                        <div class="trayectoria">
+                            <form>
+                                <input class="space3" name="tra" type="checkbox" id="trayectoria1" value="1">
+                                <label class="space3" for="age1">Si</label><br> 
+                            </form> 
+                        </div>
+                    </div>
+                </div>
+                <button class="center5" id="boton2" onclick="reload()">Resetear</button>
+            </div>
+        </div>
+    </div>    
+    
+    <script src="Particulas.js"></script>
+</body>
+</html>
+
